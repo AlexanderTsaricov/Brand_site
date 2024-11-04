@@ -196,6 +196,8 @@
 }
 
 .bigFooter {
+    background-repeat: no-repeat;
+    background-size: cover;
     .bigFooter_firstFooter {
         background-color: #222224;
         display: flex;
@@ -223,6 +225,101 @@
                 font-size: 13px;
                 text-align: center;
                 color: #fbfbfb;
+            }
+        }
+    }
+    .bigFooter_secondFooter {
+        background-image: url("pic/footerPhoto.png");
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .bigFooter_secondFooter_commentBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 28px;
+            padding-top: 97px;
+            padding-bottom: 126px;
+            .bigFooter_secondFooter_commentBox_img {
+                max-width: 96px;
+            }
+            .bigFooter_secondFooter_commentBox_comment {
+                max-width: 360px;
+                text-align: center;
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                text-align: center;
+                color: #222224;
+                .italic {
+                    font-style: italic;
+                }
+            }
+        }
+        .bigFooter_secondFooter_enterEmailBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .bigFooter_secondFooter_enterEmailBox_headText {
+                font-family: "Lato", sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 167%;
+                text-align: center;
+                color: #222224;
+            }
+            .bigFooter_secondFooter_enterEmailBox_text {
+                font-family: "Lato", sans-serif;
+                line-height: 167%;
+                text-align: center;
+                color: #222224;
+                font-weight: 400;
+                font-size: 18px;    
+            }
+            .imputBox {
+                margin-top: 32px;
+                display: flex;
+                align-items: center;
+            }
+            .bigFooter_secondFooter_enterEmailBox_email {
+                font-family: "Lato", sans-serif;
+                padding: 10px 22px;
+                border: none;
+                border-top-left-radius: 17px;
+                border-bottom-left-radius: 17px;
+                background-color: #E1E1E1;
+                margin-right: -6px;
+            }
+            .bigFooter_secondFooter_enterEmailBox_button {
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                text-align: center;
+                color: #fff;
+                border: none;
+                background-color: #F16D7F;
+                padding: 10px 10px;
+                border-top-right-radius: 17px;
+                border-bottom-right-radius: 17px;
+            }
+        }
+    }
+    .bigFooter_lastFooter {
+        background-color: #222224;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        .bigFooter_lastFooter_text {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fbfbfb;
+        }
+        .bigFooter_lastFooter_linkBox {
+            .bigFooter_lastFooter_linkBox_footerLinkIcon {
+                margin-left: 8px;
             }
         }
     }
