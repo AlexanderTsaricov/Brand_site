@@ -324,4 +324,58 @@
         }
     }
 }
+@media (max-width: 1145px) {
+    .contentCenter {
+        padding-left: calc(50% - 470px);
+        padding-right: calc(50% - 470px);
+    }
+    .logoBox_pic {
+        max-width: 470px;
+    }
+}
 
+@media (max-width: 951px) {
+    .contentCenter {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+    .logoBox {
+        .logoBox_pic {
+            max-width: 370px;
+        }
+        .logoBox_textBox {
+            display: grid;
+            min-width: 311px;
+            .logoBox_textBox_line {
+                grid-area: line;
+                padding-right: 16px;
+            }
+            .logoBox_textBox_head {
+                grid-area: head;
+                font-family: 'Lato Regular', sans-serif;
+                font-weight: 900;
+                font-size: 44px;
+            }
+            .logoBox_textBox_downHead {
+                grid-area: headDown;
+                font-family: 'Lato Light', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                .logoBox_textBox_downHead_span {
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #f16d7f;
+                }
+            }
+        }
+    }
+    .cartReclam {
+        gap: 20px;
+    }
+    .productCartBox {
+        .productCartBox_cartBox {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+    }
+}
