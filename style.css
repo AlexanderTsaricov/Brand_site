@@ -378,4 +378,24 @@
             gap: 16px;
         }
     }
+
+    .bigFooter {
+        .bigFooter_firstFooter {
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+        }
+        .bigFooter_secondFooter {
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            background-size: cover;
+            padding-bottom: 140px;
+            background-position-x: 25%;
+            .bigFooter_secondFooter_commentBox {
+                padding-top: 64px;
+                padding-bottom: 0;
+            }
+        }
+    }
 }
