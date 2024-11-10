@@ -244,6 +244,8 @@
     }
     .bigFooter_secondFooter {
         background-image: url("pic/footerPhoto.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
