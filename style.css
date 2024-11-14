@@ -166,8 +166,34 @@
         margin-top: 48px;
         .productCartBox_cartBox_cart {
             background-color: #F8F8F8;
+            position: relative;
             .productCartBox_cartBox_cart_img {
                 width: 100%;
+            }
+            .productCartBox_cartBox_cart_hover {
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: #3A3838;
+                width: 360px;
+                height: 420px;
+                opacity: 86%;
+                .productCartBox_cartBox_cart_hover_payButton {
+                    font-family: "Lato", sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #fff;
+                    text-decoration: none;
+                    display: block;
+                    padding: 10px 13px;
+                    border: 1px white solid;
+                    display: flex;
+                    gap: 11px;
+                    justify-content: center;
+                    align-items: center;
+
+                }
             }
             .productCartBox_cartBox_cart_textBox {
                 padding: 16px;
@@ -194,6 +220,12 @@
                 }
             }
         }
+        .productCartBox_cartBox_cart:hover .productCartBox_cartBox_cart_hover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
     }
     .productCartBox_button {
         margin-top: 48px;
@@ -206,6 +238,12 @@
         background: none;
         border-color: #FF6A6A;
         max-width: 222px;
+        transition-property: all;
+        transition-duration: 0.3s;
+    }
+    .productCartBox_button:hover {
+        background-color: #FF6A6A;
+        color: #FFFFFF;
     }
 }
 
@@ -336,7 +374,23 @@
         .bigFooter_lastFooter_linkBox {
             .bigFooter_lastFooter_linkBox_footerLinkIcon {
                 margin-left: 8px;
+                .bigFooter_lastFooter_linkBox_footerIcon {
+                    padding: 8px 9px;
+                    width: 15px;
+                    height: 17px;
+                    background-color: #ffff;
+                    transition-property: all;
+                    transition-duration: 0.3s
+                }
+                .bigFooter_lastFooter_linkBox_footerIcon:hover path {
+                    fill: white;
+
+                }
+                .bigFooter_lastFooter_linkBox_footerIcon:hover {
+                    background-color: #F16D7F;
+                }
             }
+            
         }
     }
 }
