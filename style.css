@@ -39,6 +39,50 @@ button {
         margin: 18px;
     }
 }
+.toggleMenu {
+    transition: all 0.6s ease;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    max-width: 232px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 33px;
+    gap: 12px;
+    .toggleMenu_headHeading {
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #000;
+    }
+    .toggleMenu_heading {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #f16d7f;
+    }
+    .toggleMenu_category {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-right: 74px;
+        padding-left: 32px;
+        .toggleMenu_variableMenu {
+            padding-left: 21.5px;
+            text-decoration: none;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #6f6e6e;
+        }
+    }
+}
+.toggleMenu_of {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
 .logoBox {
     background-color: #F1E4E6;
     display: flex;

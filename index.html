@@ -13,11 +13,38 @@
             <button class="menu_searchBox_searchButton button"><img src="icon/search_icon.svg" alt="search"></button>
         </div>
         <div class="menu_headerMenu">
-            <button class="menu_headerMenu_menuButton button"><img src="icon/menu_icon.svg" alt="menu"></button>
+            <button class="menu_headerMenu_menuButton button" id="menuButton"><img src="icon/menu_icon.svg" alt="menu"></button>
             <a href="#" class="menu_headerMenu_profileButton"><img src="icon/profile_icon.svg" alt="profile"></a>
             <button class="menu_headerMenu_basketButton button"><img src="icon/basket_icon.svg" alt="basket"></button>
         </div>
     </nav>
+    <div class="toggleMenu toggleMenu_of" id="menu">
+        <h1 class="toggleMenu_headHeading">MENU</h1>
+        <article class="toggleMenu_category">
+            <h2 class="toggleMenu_heading">MAN</h2>
+            <a class="toggleMenu_variableMenu" href="#">Accessories</a>
+            <a class="toggleMenu_variableMenu" href="#">Bags</a>
+            <a href="#" class="toggleMenu_variableMenu">Denim</a>
+            <a href="#" class="toggleMenu_variableMenu">T-Shirts</a>
+        </article>
+        <article class="toggleMenu_category">
+            <h2 class="toggleMenu_heading">WOMAN</h2>
+            <a class="toggleMenu_variableMenu" href="#">Accessories</a>
+            <a class="toggleMenu_variableMenu" href="#">Jackets & Coats</a>
+            <a href="#" class="toggleMenu_variableMenu">Polos</a>
+            <a href="#" class="toggleMenu_variableMenu">T-Shirts</a>
+            <a href="#" class="toggleMenu_variableMenu">Shirts</a>
+        </article>
+        <article class="toggleMenu_category">
+            <h2 class="toggleMenu_heading">KIDS</h2>
+            <a class="toggleMenu_variableMenu" href="#">Accessories</a>
+            <a class="toggleMenu_variableMenu" href="#">Jackets & Coats</a>
+            <a href="#" class="toggleMenu_variableMenu">Polos</a>
+            <a href="#" class="toggleMenu_variableMenu">T-Shirts</a>
+            <a href="#" class="toggleMenu_variableMenu">Shirts</a>
+            <a class="toggleMenu_variableMenu" href="#">Bags</a>
+        </article>
+    </div>
     <header class="logoBox contentCenter">
         <img src="pic/man_logo.png" alt="logo" class="logoBox_pic">
         <div class="logoBox_textBox">
@@ -304,5 +331,6 @@
             </div>
         </section>
     </footer>
+    <script src="toggle.js"></script>
 </body>
 </html>
