@@ -7,6 +7,11 @@ button {
     cursor: pointer;
 }
 
+$purpleSite: #f16d7f;
+$litePurpleSite: #F1E4E6;
+$textColorGray: #636363;
+
+
 .contentCenter {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
@@ -15,6 +20,10 @@ button {
 .button {
     background: none;
     border: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .menu {
@@ -28,7 +37,8 @@ button {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 18px;
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
     .menu_headerMenu {
         height: 38px;
@@ -36,7 +46,8 @@ button {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 18px;
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
 }
 .toggleMenu {
@@ -50,6 +61,7 @@ button {
     flex-direction: column;
     padding: 32px 33px;
     gap: 12px;
+    z-index: 100;
     .toggleMenu_headHeading {
         font-family: "Lato", sans-serif;
         font-weight: 700;
@@ -60,7 +72,7 @@ button {
         font-family: "Lato", sans-serif;
         font-weight: 400;
         font-size: 14px;
-        color: #f16d7f;
+        color: $purpleSite;
     }
     .toggleMenu_category {
         display: flex;
@@ -109,7 +121,7 @@ button {
             .logoBox_textBox_downHead_span {
                 font-weight: 700;
                 font-size: 32px;
-                color: #f16d7f;
+                color: $purpleSite;
             }
         }
         grid-template-areas:
@@ -140,7 +152,7 @@ button {
             font-family: "Lato", sans-serif;
             font-weight: 700;
             font-size: 24px;
-            color: #f16d7f;
+            color: $purpleSite;
         }
     }
     .cartReclam_picBox_woman {
@@ -264,7 +276,7 @@ button {
                     font-family: "Lato", sans-serif;
                     font-weight: 400;
                     font-size: 16px;
-                    color: #f16d7f;
+                    color: $purpleSite;
                 }
             }
         }
@@ -292,6 +304,39 @@ button {
     .productCartBox_button:hover {
         background-color: #FF6A6A;
         color: #FFFFFF;
+    }
+    &_catalogListButtons {
+        border: 1px solid #EBEBEB;
+        padding: 15px 16px;
+        width: 284px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 48px;
+        margin-bottom: 96px;
+        &_purpleNumber {
+            color: $purpleSite;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19.2px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            &:active {
+                color: $purpleSite;
+            }
+        }
+        &_numbers {
+            color: $textColorGray;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19.2px;
+            &:active {
+                color: $textColorGray;
+            }
+        }
     }
 }
 
@@ -628,5 +673,103 @@ button {
             grid-template-columns: repeat(1, 1fr);
             gap: 16.61px;
         }
+    }
+}
+
+// Catalog
+
+
+.breadCrumpsBox {
+    background-color: $litePurpleSite;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: center;
+    justify-content: space-between;
+    &_heading {
+        color: $purpleSite;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    &_breadCrumps {
+        display: flex;
+        &_link {
+            color: $textColorGray;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.8px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        &_slash {
+            color: $textColorGray;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.8px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        &_linkPurple {
+            color: $purpleSite;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16.8px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        &_link:active {
+            color: $textColorGray;
+        }
+    }
+}
+
+.filterBox {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 51px;
+    padding-bottom: 64px;
+    &_filterButtonBlack {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.8px;
+        text-align: left;
+        color: #000;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+    &_grayBox {
+        display: flex;
+        gap: 28px;
+        &_variableFilterButton {
+            color: $textColorGray;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.8px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+.productCartBoxCatalog {
+    margin-top: 0;
+    .productCartBoxCatalog {
+        margin-top: 0;
     }
 }

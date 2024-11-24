@@ -17,6 +17,10 @@ button {
   border: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -29,7 +33,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 .menu .menu_headerMenu {
   height: 38px;
@@ -37,7 +42,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .toggleMenu {
@@ -51,6 +57,7 @@ button {
   flex-direction: column;
   padding: 32px 33px;
   gap: 12px;
+  z-index: 100;
 }
 .toggleMenu .toggleMenu_headHeading {
   font-family: "Lato", sans-serif;
@@ -287,6 +294,40 @@ button {
 .productCartBox .productCartBox_button:hover {
   background-color: #FF6A6A;
   color: #FFFFFF;
+}
+.productCartBox_catalogListButtons {
+  border: 1px solid #EBEBEB;
+  padding: 15px 16px;
+  width: 284px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 96px;
+}
+.productCartBox_catalogListButtons_purpleNumber {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.productCartBox_catalogListButtons_purpleNumber:active {
+  color: #f16d7f;
+}
+.productCartBox_catalogListButtons_numbers {
+  color: #636363;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+}
+.productCartBox_catalogListButtons_numbers:active {
+  color: #636363;
 }
 
 .bigFooter {
@@ -602,4 +643,102 @@ button {
     grid-template-columns: repeat(1, 1fr);
     gap: 16.61px;
   }
+}
+.breadCrumpsBox {
+  background-color: #F1E4E6;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+.breadCrumpsBox_heading {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.breadCrumpsBox_breadCrumps {
+  display: flex;
+}
+.breadCrumpsBox_breadCrumps_link {
+  color: #636363;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.breadCrumpsBox_breadCrumps_slash {
+  color: #636363;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.breadCrumpsBox_breadCrumps_linkPurple {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.breadCrumpsBox_breadCrumps_link:active {
+  color: #636363;
+}
+
+.filterBox {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 51px;
+  padding-bottom: 64px;
+}
+.filterBox_filterButtonBlack {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  text-align: left;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.filterBox_grayBox {
+  display: flex;
+  gap: 28px;
+}
+.filterBox_grayBox_variableFilterButton {
+  color: #636363;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.productCartBoxCatalog {
+  margin-top: 0;
+}
+.productCartBoxCatalog .productCartBoxCatalog {
+  margin-top: 0;
 }/*# sourceMappingURL=style.css.map */
