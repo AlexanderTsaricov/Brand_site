@@ -654,7 +654,7 @@ a {
 }
 .breadCrumpsBox_heading {
   color: #f16d7f;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 28.8px;
@@ -668,7 +668,7 @@ a {
 }
 .breadCrumpsBox_breadCrumps_link {
   color: #636363;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
@@ -679,7 +679,7 @@ a {
 }
 .breadCrumpsBox_breadCrumps_slash {
   color: #636363;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
@@ -690,7 +690,7 @@ a {
 }
 .breadCrumpsBox_breadCrumps_linkPurple {
   color: #f16d7f;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16.8px;
@@ -748,8 +748,117 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  height: 777px;
 }
 .bigImageBox_arrow {
   width: 47px;
   height: 47px;
+}
+
+.productDiscription {
+  border: 1px solid #EAEAEA;
+  width: 1141px;
+  position: absolute;
+  top: 712px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-left: calc(50% - 570px);
+  margin-right: calc(50% - 570px);
+}
+.productDiscription_heading {
+  margin-top: 64.5px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: #f16d7f;
+}
+.productDiscription_pinkLine {
+  margin: 12px;
+  width: 63px;
+  border-top: #f16d7f 3px solid;
+}
+.productDiscription_hedingProduct {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  color: #4D4D4D;
+  margin-bottom: 48px;
+}
+.productDiscription_discriptionText {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: center;
+  color: #5E5E5E;
+  width: 572px;
+  margin-bottom: 32px;
+}
+.productDiscription_productPrice {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: #f16d7f;
+}
+.productDiscription_grayLine {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 642px;
+  border-top: 1px solid #EAEAEA;
+}
+.productDiscription_filterBox {
+  display: flex;
+  gap: 23px;
+  margin-bottom: 49px;
+}
+.productDiscription_filterBox_filter_summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.productDiscription_filterBox_filter_text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6F6E6E;
+}
+.productDiscription_button {
+  padding: 14px 56px 14px 23px;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  background-color: white;
+  border: 1px solid #f16d7f;
+  margin-bottom: 65px;
+}
+.productDiscription_button_text {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #f16d7f;
+}
+
+.productCartMargin {
+  margin-top: 664px;
+  margin-bottom: 128px;
 }/*# sourceMappingURL=style.css.map */
