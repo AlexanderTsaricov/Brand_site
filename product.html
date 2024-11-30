@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu contentCenter">
+        <div class="menu_searchBox">
+            <a href="index.html" class="menu_searchBox_brandIcon"><img src="icon/brand_icon.svg" alt="brand"></a>
+            <button class="menu_searchBox_searchButton button"><img src="icon/search_icon.svg" alt="search"></button>
+        </div>
+        <div class="menu_headerMenu">
+            <button class="menu_headerMenu_menuButton button" id="menuButton"><img src="icon/menu_icon.svg" alt="menu"></button>
+            <a href="#" class="menu_headerMenu_profileButton"><img src="icon/profile_icon.svg" alt="profile"></a>
+            <button class="menu_headerMenu_basketButton button"><img src="icon/basket_icon.svg" alt="basket"></button>
+        </div>
+    </nav>
+    <div class="toggleMenu toggleMenu_of" id="menu">
+        <h1 class="toggleMenu_headHeading">MENU</h1>
+        <article class="toggleMenu_category">
+            <a href="catalog.html" class="toggleMenu_heading">MAN</a>
+            <a class="toggleMenu_variableMenu" href="#">Accessories</a>
+            <a class="toggleMenu_variableMenu" href="#">Bags</a>
+            <a href="#" class="toggleMenu_variableMenu">Denim</a>
+            <a href="#" class="toggleMenu_variableMenu">T-Shirts</a>
+        </article>
+        <article class="toggleMenu_category">
+            <h2 class="toggleMenu_heading">WOMAN</h2>
+            <a class="toggleMenu_variableMenu" href="#">Accessories</a>
+            <a class="toggleMenu_variableMenu" href="#">Jackets & Coats</a>
+            <a href="#" class="toggleMenu_variableMenu">Polos</a>
+            <a href="#" class="toggleMenu_variableMenu">T-Shirts</a>
+            <a href="#" class="toggleMenu_variableMenu">Shirts</a>
+        </article>
+        <article class="toggleMenu_category">
+            <h2 class="toggleMenu_heading">KIDS</h2>
+            <a class="toggleMenu_variableMenu" href="#">Accessories</a>
+            <a class="toggleMenu_variableMenu" href="#">Jackets & Coats</a>
+            <a href="#" class="toggleMenu_variableMenu">Polos</a>
+            <a href="#" class="toggleMenu_variableMenu">T-Shirts</a>
+            <a href="#" class="toggleMenu_variableMenu">Shirts</a>
+            <a class="toggleMenu_variableMenu" href="#">Bags</a>
+        </article>
+    </div>
+    <nav class="breadCrumpsBox contentCenter">
+        <h1 class="breadCrumpsBox_heading">NEW ARRIVALS</h1>
+        <div class="breadCrumpsBox_breadCrumps">
+            <a href="index.html" class="breadCrumpsBox_breadCrumps_link">HOME</a>
+            <pre class="breadCrumpsBox_breadCrumps_slash"> / </pre>
+            <a href="#" class="breadCrumpsBox_breadCrumps_link">MEN</a>
+            <pre class="breadCrumpsBox_breadCrumps_slash"> / </pre>
+            <a href="#" class="breadCrumpsBox_breadCrumps_linkPurple">NEW ARRIVALS</a>
+        </div>
+    </nav>
+    <main>
+        <div class="bigImageBox">
+            <a href="#" class="bigImageBox_arrow">
+                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47 0H0V47H47V0Z" fill="#2A2A2A" fill-opacity="0.15"/>
+                    <path d="M29.6998 15.7499L21.9498 23.4999L29.6998 31.2499L28.1498 34.3499L17.2998 23.4999L28.1498 12.6499L29.6998 15.7499Z" fill="black"/>
+                    </svg>                                                           
+            </a>
+            <img src="pic/womenOnChair.png" alt="bigPic">
+            <a href="#" class="bigImageBox_arrow">
+                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47 0H0V47H47V0Z" fill="#2A2A2A" fill-opacity="0.15"/>
+                    <path d="M17.2998 31.2499L25.0498 23.4999L17.2998 15.7499L18.8498 12.6499L29.6998 23.4999L18.8498 34.3499L17.2998 31.2499Z" fill="#F16D7F"/>
+                    </svg>                                     
+            </a>
+        </div>
+    </main>
+    <script src="toggle.js"></script>
+</body>
+</html>

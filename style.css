@@ -741,4 +741,15 @@ a {
 }
 .productCartBoxCatalog .productCartBoxCatalog {
   margin-top: 0;
+}
+
+.bigImageBox {
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bigImageBox_arrow {
+  width: 47px;
+  height: 47px;
 }/*# sourceMappingURL=style.css.map */
