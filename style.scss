@@ -317,7 +317,7 @@ a {
         margin-bottom: 96px;
         &_purpleNumber {
             color: $purpleSite;
-            font-family: Lato;
+            font-family: $fontFamily;
             font-size: 16px;
             font-weight: 300;
             line-height: 19.2px;
@@ -330,7 +330,7 @@ a {
         }
         &_numbers {
             color: $textColorGray;
-            font-family: Lato;
+            font-family: $fontFamily;
             font-size: 16px;
             font-weight: 300;
             line-height: 19.2px;
@@ -737,33 +737,135 @@ a {
 
 .filterBox {
     display: flex;
-    justify-content: space-between;
-    padding-top: 51px;
-    padding-bottom: 64px;
-    &_filterButtonBlack {
-        font-family: Lato;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 16.8px;
-        text-align: left;
-        color: #000;
-        display: flex;
-        align-items: center;
-        gap: 11px;
+    justify-content: center;
+    padding-top: 38px;
+    padding-bottom: 48px;
+    position: relative;
+    &_filter {
+        position: absolute;
+        z-index: 100;
+        padding: 13px 16px;
+        left: calc(50% - 586px);
+        &[open] {
+            .filterBox_filter_text {
+                color: $purpleSite;
+            }
+            .filterBox_filter_svg path {
+                fill: $purpleSite;
+            }
+            color: $purpleSite;
+            background-color: white;
+            box-shadow: 6px 4px 35px 0px #00000036;
+        }
+        &_summary {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }              
+        &_text {
+            font-family: $fontFamily;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16.8px;
+            text-align: left;
+            color: #000;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        &_categories {
+            margin-top: 18px;
+            &_text {
+                font-family: $fontFamily;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.8px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: $purpleSite;
+                list-style: none;
+                padding: 11px 15px;
+                border-bottom: 1px solid #EBEBEB;
+                border-left: 5px solid #EF5B70;
+                width: 325px;
+            }
+            &_box {
+                padding: 11px 24px 0 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 11px;
+                &_links {
+                    font-family: $fontFamily;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16.8px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: $textColorGray;
+                }
+            }
+        }
     }
     &_grayBox {
         display: flex;
         gap: 28px;
+        padding: 13px 16px;
         &_variableFilterButton {
-            color: $textColorGray;
-            font-family: Lato;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 16.8px;
-            text-align: left;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            position: relative;
+            &:hover {
+                cursor: pointer;
+            }            
+            &_text {
+                color: $textColorGray;
+                font-family: $fontFamily;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.8px;
+                text-align: left;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            &_sizeBox {
+                position: absolute;
+                z-index: 100;
+                background-color: #fff;
+                box-shadow: 6px 4px 35px 0px #00000036;
+                padding: 7px 30px 7px 8px;
+                margin-top: 5px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+            &_size {
+                display: flex;
+                gap: 8px;
+                &_checkBox {
+                    appearance: none;
+                    -webkit-appearance: none; 
+                    border: 1px solid #EBEBEB;
+                    width: 13px;
+                    height: 13px;
+                    margin: 1px;
+                    &:checked::after {
+                        content: "✓";
+                        color: $textColorGray;
+                    }
+                }
+                &_text {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16.41px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: $textColorGray;
+                }
+            }
         }
     }
 }
@@ -776,7 +878,8 @@ a {
 }
 
 
-// product
+// productt
+
 
 .bigImageBox {
     background-color: #F7F7F7;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -307,7 +308,7 @@ a {
 }
 .productCartBox_catalogListButtons_purpleNumber {
   color: #f16d7f;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 19.2px;
@@ -321,7 +322,7 @@ a {
 }
 .productCartBox_catalogListButtons_numbers {
   color: #636363;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 19.2px;
@@ -705,35 +706,141 @@ a {
 
 .filterBox {
   display: flex;
-  justify-content: space-between;
-  padding-top: 51px;
-  padding-bottom: 64px;
+  justify-content: center;
+  padding-top: 38px;
+  padding-bottom: 48px;
+  position: relative;
 }
-.filterBox_filterButtonBlack {
-  font-family: Lato;
+.filterBox_filter {
+  position: absolute;
+  z-index: 100;
+  padding: 13px 16px;
+  left: calc(50% - 586px);
+}
+.filterBox_filter[open] {
+  color: #f16d7f;
+  background-color: white;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
+}
+.filterBox_filter[open] .filterBox_filter_text {
+  color: #f16d7f;
+}
+.filterBox_filter[open] .filterBox_filter_svg path {
+  fill: #f16d7f;
+}
+.filterBox_filter_summary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.filterBox_filter_text {
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 16.8px;
   text-align: left;
   color: #000;
-  display: flex;
-  align-items: center;
-  gap: 11px;
 }
-.filterBox_grayBox {
-  display: flex;
-  gap: 28px;
+.filterBox_filter:hover {
+  cursor: pointer;
 }
-.filterBox_grayBox_variableFilterButton {
-  color: #636363;
-  font-family: Lato;
+.filterBox_filter_categories {
+  margin-top: 18px;
+}
+.filterBox_filter_categories_text {
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
   text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #f16d7f;
+  list-style: none;
+  padding: 11px 15px;
+  border-bottom: 1px solid #EBEBEB;
+  border-left: 5px solid #EF5B70;
+  width: 325px;
+}
+.filterBox_filter_categories_box {
+  padding: 11px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.filterBox_filter_categories_box_links {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #636363;
+}
+.filterBox_grayBox {
+  display: flex;
+  gap: 28px;
+  padding: 13px 16px;
+}
+.filterBox_grayBox_variableFilterButton {
+  position: relative;
+}
+.filterBox_grayBox_variableFilterButton:hover {
+  cursor: pointer;
+}
+.filterBox_grayBox_variableFilterButton_text {
+  color: #636363;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.filterBox_grayBox_variableFilterButton_sizeBox {
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
+  padding: 7px 30px 7px 8px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.filterBox_grayBox_variableFilterButton_size {
+  display: flex;
+  gap: 8px;
+}
+.filterBox_grayBox_variableFilterButton_size_checkBox {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #EBEBEB;
+  width: 13px;
+  height: 13px;
+  margin: 1px;
+}
+.filterBox_grayBox_variableFilterButton_size_checkBox:checked::after {
+  content: "✓";
+  color: #636363;
+}
+.filterBox_grayBox_variableFilterButton_size_text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #636363;
 }
 
 .productCartBoxCatalog {
