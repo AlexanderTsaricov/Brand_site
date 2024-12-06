@@ -1061,4 +1061,113 @@ a {
 }
 .cartContent .payBox {
   max-width: 360px;
+}
+.cartContent .payBox_adressBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 57px;
+}
+.cartContent .payBox_adressBox_headText {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #636363;
+}
+.cartContent .payBox_adressBox_input {
+  padding: 14px 17px 14px 17px;
+  width: 326px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: "Lato", sans-serif;
+}
+.cartContent .payBox_adressBox_button {
+  padding: 10px 14px;
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #636363;
+  background-color: white;
+  border: 1px solid #A4A4A4;
+  max-width: 104px;
+}
+.cartContent .payBox_paymentBox {
+  background-color: #F5F3F3;
+  padding: 40px 34px 42px 40px;
+  display: flex;
+  flex-direction: column;
+  width: 286px;
+}
+.cartContent .payBox_paymentBox_subTotal {
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #4A4A4A;
+  text-align: right;
+  margin-bottom: 12px;
+}
+.cartContent .payBox_paymentBox_subTotal_price {
+  margin-left: 25px;
+}
+.cartContent .payBox_paymentBox_grandTotal {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #4A4A4A;
+  text-align: right;
+  margin-bottom: 21px;
+}
+.cartContent .payBox_paymentBox_grandTotal_price {
+  margin-left: 25px;
+  color: #f16d7f;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.cartContent .payBox_paymentBox_line {
+  border: none;
+  border-top: 1px solid #E2E2E2;
+  margin-bottom: 17px;
+}
+.cartContent .payBox_paymentBox_button {
+  padding: 15px 42px;
+  background-color: #f16d7f;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  border: none;
 }/*# sourceMappingURL=style.css.map */

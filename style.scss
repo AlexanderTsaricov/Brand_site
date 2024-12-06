@@ -1089,5 +1089,107 @@ a {
     }
     .payBox {
         max-width: 360px;
+        &_adressBox {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            &_headText {
+                font-family: $fontFamily;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: $textColorGray;
+            }
+            &_input {
+                padding: 14px 17px 14px 17px;
+                width: 326px;
+                font-family: $fontFamily;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 15.6px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: $fontFamily;
+            }
+            &_button {
+                padding: 10px 14px;
+                font-family: $fontFamily;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 13.2px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: $textColorGray;
+                background-color: white;
+                border: 1px solid #A4A4A4;
+                max-width: 104px;
+            }
+            margin-bottom: 57px;
+        }
+        &_paymentBox {
+            background-color: #F5F3F3;
+            padding: 40px 34px 42px 40px;
+            display: flex;
+            flex-direction: column;
+            width: 286px;
+            &_subTotal {
+                font-family: $fontFamily;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 13.2px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #4A4A4A;
+                text-align: right;
+                margin-bottom: 12px;
+                &_price {
+                    margin-left: 25px;
+                }
+            }
+            &_grandTotal {
+                font-family: $fontFamily;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #4A4A4A;
+                text-align: right;
+                margin-bottom: 21px;
+                &_price {
+                    margin-left: 25px;
+                    color: $purpleSite;
+                    font-family: $fontFamily;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19.2px;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                }
+            }
+            &_line {
+                border: none;
+                border-top: 1px solid #E2E2E2;
+                margin-bottom: 17px;
+            }
+            &_button {
+                padding: 15px 42px;
+                background-color: $purpleSite;
+                color: white;
+                font-family: $fontFamily;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                border: none;
+            }            
+        }
     }
 }
