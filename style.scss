@@ -957,6 +957,7 @@ a {
         gap: 23px;
         margin-bottom: 49px;
         &_filter {
+            position: relative;
             &_summary {
                 list-style: none;
                 display: flex;
@@ -972,6 +973,9 @@ a {
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
                 color: #6F6E6E;
+            }
+            &_content {
+                position: absolute;
             }
         }
     }

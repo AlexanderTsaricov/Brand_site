@@ -927,6 +927,9 @@ a {
   gap: 23px;
   margin-bottom: 49px;
 }
+.productDiscription_filterBox_filter {
+  position: relative;
+}
 .productDiscription_filterBox_filter_summary {
   list-style: none;
   display: flex;
@@ -943,6 +946,9 @@ a {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: #6F6E6E;
+}
+.productDiscription_filterBox_filter_content {
+  position: absolute;
 }
 .productDiscription_button {
   padding: 14px 56px 14px 23px;
