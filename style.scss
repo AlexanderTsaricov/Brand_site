@@ -1259,6 +1259,9 @@ a {
             content: "✓";
             color: $purpleSite;
         }
+        &:hover {
+            border-color: $purpleSite;
+        }
     }
 
     &__label {
