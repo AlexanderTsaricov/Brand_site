@@ -11,6 +11,7 @@ $purpleSite: #f16d7f;
 $litePurpleSite: #F1E4E6;
 $textColorGray: #636363;
 $fontFamily: "Lato", sans-serif;
+$inputColor: #B1B1B1;
 
 
 .contentCenter {
@@ -1195,5 +1196,167 @@ a {
                 border: none;
             }            
         }
+    }
+}
+
+// Registration page
+
+.registrationMain {
+    display: flex;
+    gap: 128px;
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.registrationBox {
+    &__nameBox {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__nameBoxHeadText {
+        font-family: $fontFamily;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $textColorGray;
+    }
+
+    &__input {
+        padding: 13px 17px 13px 17px;
+        font-family: $fontFamily;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $inputColor;
+        border: 1px solid #A4A4A4;
+        width: 360px;
+    }
+
+    &__sexBox {
+        display: flex;
+        margin-top: 31px;
+        align-items: center;
+    }
+
+    &__sex {
+        appearance: none;
+        width: 17px;
+        height: 17px;
+        border-radius: 100%;
+        border: 1px solid #A4A4A4;
+        text-align: center;
+        margin-right: 10px;
+        cursor: pointer;
+        &:checked::after {
+            content: "✓";
+            color: $purpleSite;
+        }
+    }
+
+    &__label {
+        font-family: $fontFamily;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13.2px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: black;
+        display: block;
+        margin-right: 20px;
+    }
+
+    &__loginDataBox {
+        margin-top: 33px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__loginDataHeadText {
+        font-family: $fontFamily;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $textColorGray;
+    }
+
+    &__passwordRules {
+        font-family: $fontFamily;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $inputColor;
+    }
+
+    &__button {
+        background-color: $purpleSite;
+        color: white;
+        padding: 16px 29px;
+        border: none;
+        margin-top: 39px;
+    }
+
+    &__buttonSvg {
+        margin-left: 20px;
+    }
+
+}
+
+.reclamBox {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    &__headerText {
+        font-family: $fontFamily;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: black;
+    }
+
+    &__discription {
+        font-family: $fontFamily;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: black;
+    }
+
+    &__list > .reclamBox__li:not(:first-child) {
+        padding-top: 16px;
+    }
+
+    &__li {
+        font-family: $fontFamily;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: black;
+        list-style-image: url(icon/listStyle.svg);
+        padding-left: 22px;
     }
 }
