@@ -477,174 +477,10 @@ a {
   background-color: #F16D7F;
 }
 
-@media (max-width: 1145px) {
-  .contentCenter {
-    padding-left: calc(50% - 470px);
-    padding-right: calc(50% - 470px);
-  }
-  .logoBox_pic {
-    max-width: 470px;
-  }
-  .cartReclam .cartReclam_picBox_woman {
-    top: 80px;
-    left: 79px;
-  }
-  .cartReclam .cartReclam_picBox_man {
-    top: 78px;
-    left: 97px;
-  }
-  .cartReclam .cartReclam_picBox_child {
-    top: 78px;
-    left: 87px;
-  }
-  .cartReclam .cartReclam_picBox_clothers {
-    top: 53px;
-    left: 397px;
-  }
+.forJSsvg {
+  display: none;
 }
-@media (max-width: 951px) {
-  .contentCenter {
-    padding-left: calc(50% - 368px);
-    padding-right: calc(50% - 368px);
-  }
-  .logoBox .logoBox_pic {
-    max-width: 370px;
-  }
-  .logoBox .logoBox_textBox {
-    display: grid;
-    min-width: 311px;
-  }
-  .logoBox .logoBox_textBox .logoBox_textBox_line {
-    grid-area: line;
-    padding-right: 16px;
-  }
-  .logoBox .logoBox_textBox .logoBox_textBox_head {
-    grid-area: head;
-    font-family: "Lato Regular", sans-serif;
-    font-weight: 900;
-    font-size: 44px;
-  }
-  .logoBox .logoBox_textBox .logoBox_textBox_downHead {
-    grid-area: headDown;
-    font-family: "Lato Light", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-  }
-  .logoBox .logoBox_textBox .logoBox_textBox_downHead .logoBox_textBox_downHead_span {
-    font-weight: 700;
-    font-size: 24px;
-    color: #f16d7f;
-  }
-  .cartReclam {
-    gap: 20px;
-  }
-  .cartReclam .cartReclam_picBox_woman {
-    top: 59px;
-    left: 39px;
-  }
-  .cartReclam .cartReclam_picBox_man {
-    top: 57px;
-    left: 61px;
-  }
-  .cartReclam .cartReclam_picBox_child {
-    top: 58px;
-    left: 59px;
-  }
-  .cartReclam .cartReclam_picBox_clothers {
-    top: 33px;
-    left: 288px;
-  }
-  .productCartBox .productCartBox_cartBox {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-  .bigFooter .bigFooter_firstFooter {
-    flex-direction: column;
-    gap: 48px;
-    align-items: center;
-  }
-  .bigFooter .bigFooter_secondFooter {
-    flex-direction: column;
-    gap: 48px;
-    align-items: center;
-    background-size: cover;
-    padding-bottom: 140px;
-    background-position-x: 25%;
-  }
-  .bigFooter .bigFooter_secondFooter .bigFooter_secondFooter_commentBox {
-    padding-top: 64px;
-    padding-bottom: 0;
-  }
-}
-@media (max-width: 741px) {
-  .contentCenter {
-    padding-left: calc(50% - 171.5px);
-    padding-right: calc(50% - 171.5px);
-  }
-  .menu .menu_headerMenu {
-    justify-content: flex-end;
-  }
-  .menu .menu_headerMenu .menu_headerMenu_profileButton {
-    display: none;
-  }
-  .menu .menu_headerMenu .menu_headerMenu_basketButton {
-    display: none;
-  }
-  .logoBox {
-    min-height: 363px;
-    justify-content: center;
-  }
-  .logoBox .logoBox_pic {
-    display: none;
-  }
-  .cartReclam {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: none;
-    gap: 32px;
-  }
-  .cartReclam .cartReclam_picBox_woman {
-    top: 98px;
-    left: 94px;
-  }
-  .cartReclam .cartReclam_picBox_man {
-    top: 102px;
-    left: 115px;
-  }
-  .cartReclam .cartReclam_picBox_child {
-    top: 102px;
-    left: 115px;
-  }
-  .cartReclam .cartReclam_picBox_clothers {
-    top: 30px;
-    left: 92px;
-  }
-  .cartReclam .cartReclam_upfirst {
-    grid-area: auto;
-  }
-  .cartReclam .cartReclam_upsecond {
-    grid-area: auto;
-  }
-  .cartReclam .cartReclam_uplast {
-    grid-area: auto;
-  }
-  .cartReclam .cartReclam_down {
-    grid-area: auto;
-  }
-  .cartReclam .cartReclam_down .cartReclam_picBox_bigPic {
-    overflow: hidden;
-    min-height: 111px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .productCartBox {
-    margin-top: 64px;
-  }
-  .productCartBox .productCartBox_cartBox {
-    margin-top: 64px;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16.61px;
-  }
-}
+
 .breadCrumpsBox {
   background-color: #F1E4E6;
   display: flex;
@@ -783,7 +619,7 @@ a {
 .filterBox_grayBox {
   display: flex;
   gap: 28px;
-  padding: 13px 16px;
+  padding: 13px 0px;
 }
 .filterBox_grayBox_variableFilterButton {
   position: relative;
@@ -1333,4 +1169,182 @@ a {
   color: black;
   list-style-image: url(icon/listStyle.svg);
   padding-left: 22px;
+}
+
+@media (max-width: 1145px) {
+  .contentCenter {
+    padding-left: calc(50% - 470px);
+    padding-right: calc(50% - 470px);
+  }
+  .logoBox_pic {
+    max-width: 470px;
+  }
+  .cartReclam .cartReclam_picBox_woman {
+    top: 80px;
+    left: 79px;
+  }
+  .cartReclam .cartReclam_picBox_man {
+    top: 78px;
+    left: 97px;
+  }
+  .cartReclam .cartReclam_picBox_child {
+    top: 78px;
+    left: 87px;
+  }
+  .cartReclam .cartReclam_picBox_clothers {
+    top: 53px;
+    left: 397px;
+  }
+  .filterBox_filter {
+    left: calc(50% - 486px);
+  }
+}
+@media (max-width: 951px) {
+  .contentCenter {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .logoBox .logoBox_pic {
+    max-width: 370px;
+  }
+  .logoBox .logoBox_textBox {
+    display: grid;
+    min-width: 311px;
+  }
+  .logoBox .logoBox_textBox .logoBox_textBox_line {
+    grid-area: line;
+    padding-right: 16px;
+  }
+  .logoBox .logoBox_textBox .logoBox_textBox_head {
+    grid-area: head;
+    font-family: "Lato Regular", sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+  }
+  .logoBox .logoBox_textBox .logoBox_textBox_downHead {
+    grid-area: headDown;
+    font-family: "Lato Light", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .logoBox .logoBox_textBox .logoBox_textBox_downHead .logoBox_textBox_downHead_span {
+    font-weight: 700;
+    font-size: 24px;
+    color: #f16d7f;
+  }
+  .cartReclam {
+    gap: 20px;
+  }
+  .cartReclam .cartReclam_picBox_woman {
+    top: 59px;
+    left: 39px;
+  }
+  .cartReclam .cartReclam_picBox_man {
+    top: 57px;
+    left: 61px;
+  }
+  .cartReclam .cartReclam_picBox_child {
+    top: 58px;
+    left: 59px;
+  }
+  .cartReclam .cartReclam_picBox_clothers {
+    top: 33px;
+    left: 288px;
+  }
+  .productCartBox .productCartBox_cartBox {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .bigFooter .bigFooter_firstFooter {
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
+  .bigFooter .bigFooter_secondFooter {
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    background-size: cover;
+    padding-bottom: 140px;
+    background-position-x: 25%;
+  }
+  .bigFooter .bigFooter_secondFooter .bigFooter_secondFooter_commentBox {
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
+  .filterBox {
+    justify-content: flex-end;
+  }
+  .filterBox_filter {
+    left: calc(50% - 386px);
+  }
+}
+@media (max-width: 741px) {
+  .contentCenter {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+  }
+  .menu .menu_headerMenu {
+    justify-content: flex-end;
+  }
+  .menu .menu_headerMenu .menu_headerMenu_profileButton {
+    display: none;
+  }
+  .menu .menu_headerMenu .menu_headerMenu_basketButton {
+    display: none;
+  }
+  .logoBox {
+    min-height: 363px;
+    justify-content: center;
+  }
+  .logoBox .logoBox_pic {
+    display: none;
+  }
+  .cartReclam {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: none;
+    gap: 32px;
+  }
+  .cartReclam .cartReclam_picBox_woman {
+    top: 98px;
+    left: 94px;
+  }
+  .cartReclam .cartReclam_picBox_man {
+    top: 102px;
+    left: 115px;
+  }
+  .cartReclam .cartReclam_picBox_child {
+    top: 102px;
+    left: 115px;
+  }
+  .cartReclam .cartReclam_picBox_clothers {
+    top: 30px;
+    left: 92px;
+  }
+  .cartReclam .cartReclam_upfirst {
+    grid-area: auto;
+  }
+  .cartReclam .cartReclam_upsecond {
+    grid-area: auto;
+  }
+  .cartReclam .cartReclam_uplast {
+    grid-area: auto;
+  }
+  .cartReclam .cartReclam_down {
+    grid-area: auto;
+  }
+  .cartReclam .cartReclam_down .cartReclam_picBox_bigPic {
+    overflow: hidden;
+    min-height: 111px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .productCartBox {
+    margin-top: 64px;
+  }
+  .productCartBox .productCartBox_cartBox {
+    margin-top: 64px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16.61px;
+  }
 }/*# sourceMappingURL=style.css.map */
