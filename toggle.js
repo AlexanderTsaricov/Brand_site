@@ -33,6 +33,8 @@ let imgList = [
     "catalogCart/manInBlackJacet.png",
     "catalogCart/manInGreenT-Shirt.png"
 ];
+let minProduct = 9;
+let remainderCart = productArr.length - 9;
 
 function addProduct(imgLink) {
     productArr.push(new product(imgLink));
@@ -45,6 +47,7 @@ for (let index = 0; index < imgList.length; index++) {
 function addProductTeg(product) {
     let divCart = document.createElement("div");
     divCart.className = "productCartBox_cartBox_cart";
+    divCart.classList.add("catalogCarts");
 
     let img = document.createElement("img");
     img.className = "productCartBox_cartBox_cart_img";
@@ -92,9 +95,91 @@ function addProductTeg(product) {
     divCart.appendChild(divTextBox);
     return divCart;
 }
+let isClickHandled = true;
+function addNumbersTag(count, select) {
+    for (let index = 0; index < count; index++) {
+        let numbersBox = document.getElementById("numbersBox");
+        let tag_a = document.createElement("a");
+        tag_a.textContent = `${index+1}`;
+        if (isClickHandled) {
+            tag_a.addEventListener('click', () => clickNumberCatalogList(index + 1));
+        }
+        if ((index + 1) == select) {
+            tag_a.className = "productCartBox_catalogListButtons_purpleNumber";
+        } else {
+            tag_a.className = "productCartBox_catalogListButtons_numbers";
+        }
+        tag_a.classList.add("catalogListNumber")
+        numbersBox.appendChild(tag_a);
+    }
+}
 
 let cartBox = document.getElementById("cartBox");
 
 for (let index = 0; index < productArr.length; index++) {
     cartBox.appendChild(addProductTeg(productArr[index]));    
 }
+addNumbersTag(productArr.length-8, 1);
+
+function removeTags(tag) {
+    const elements = document.querySelectorAll(`.${tag}`);
+    elements.forEach((element) => {
+        element.remove();
+    });
+}
+
+let mediaMaxWidth951 = window.matchMedia("(max-width: 951px)");
+let mediaMinWidth1145 = window.matchMedia("(min-width: 952px)");
+let productOnPage = 9;
+function maxWidth951(media) {
+    if (media.matches) {
+        removeTags("catalogCarts");
+        productOnPage = 0;
+        minProduct = 8;     
+        let maxProducts = Math.min(minProduct, productArr.length);
+        for (let index = 0; index < maxProducts; index++) {
+            cartBox.appendChild(addProductTeg(productArr[index]));
+            productOnPage++;
+        }
+        removeTags("catalogListNumber");
+        remainderCart = productArr.length - 7;
+        addNumbersTag(remainderCart, 1);
+    }
+}
+
+function add9cart(media) {
+    if (media.matches) {
+        removeTags("catalogCarts");
+        productOnPage = 0;
+        minProduct = 9;              
+        let maxProducts = Math.min(minProduct, productArr.length);
+        for (let index = 0; index < maxProducts; index++) {
+            cartBox.appendChild(addProductTeg(productArr[index]));
+            productOnPage++;
+        }
+        removeTags("catalogListNumber");
+        remainderCart = productArr.length - 8;
+        addNumbersTag(remainderCart, 1);
+    }
+}
+
+function clickNumberCatalogList(number) {
+    console.log(`click ${number}`);
+    if (number == 1) {
+        productOnPage = 1;
+    }
+    removeTags("catalogCarts");
+    let maxProducts = Math.min(minProduct, productArr.length);
+    for (let index = productOnPage - 1; index < maxProducts; index++) {
+        cartBox.appendChild(addProductTeg(productArr[index]));
+        productOnPage++;
+    }
+    removeTags("catalogListNumber");
+    remainderCart = productArr.length - (minProduct-1);
+    addNumbersTag(remainderCart, number);
+}
+
+mediaMaxWidth951.addEventListener("change", maxWidth951);
+mediaMinWidth1145.addEventListener("change", add9cart);
+maxWidth951(mediaMaxWidth951);
+add9cart(mediaMinWidth1145);

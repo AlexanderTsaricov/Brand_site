@@ -330,6 +330,11 @@ a {
 .productCartBox_catalogListButtons_numbers:active {
   color: #636363;
 }
+.productCartBox_catalogListButtons_numbersBox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 .bigFooter {
   background-repeat: no-repeat;

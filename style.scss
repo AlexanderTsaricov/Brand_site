@@ -339,6 +339,11 @@ a {
                 color: $textColorGray;
             }
         }
+        &_numbersBox {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
     }
 }
 
