@@ -1365,6 +1365,46 @@ a {
         gap: 15px;
     }
 
+    // registration
+    .registrationMain {
+        gap: 22px;
+    }
+
+    .reclamBox {
+        &__headerText  {
+            font-family: $fontFamily;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        &__discription {
+            font-family: $fontFamily;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        &__list {
+            padding-left: 25px;
+        }
+
+        &__li {
+            font-family: $fontFamily;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+    }
+
 }
 
 @media (max-width: 741px) {
@@ -1555,5 +1595,17 @@ a {
 
     .cartContent .payBox {
         flex-direction: column;
+    }
+
+    //registration 
+    .registrationMain {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .registrationBox {
+        &__input {
+            width: auto;
+        }
     }
 }

@@ -1329,6 +1329,42 @@ a {
     padding-right: calc(50% - 368px);
     gap: 15px;
   }
+  .registrationMain {
+    gap: 22px;
+  }
+  .reclamBox__headerText {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .reclamBox__discription {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .reclamBox__list {
+    padding-left: 25px;
+  }
+  .reclamBox__li {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
 }
 @media (max-width: 741px) {
   .contentCenter {
@@ -1498,5 +1534,12 @@ a {
   }
   .cartContent .payBox {
     flex-direction: column;
+  }
+  .registrationMain {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .registrationBox__input {
+    width: auto;
   }
 }/*# sourceMappingURL=style.css.map */
