@@ -1318,6 +1318,17 @@ a {
   .display {
     display: none;
   }
+  .cartContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cartContent .payBox {
+    display: flex;
+    max-width: 735px;
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+    gap: 15px;
+  }
 }
 @media (max-width: 741px) {
   .contentCenter {
@@ -1427,5 +1438,65 @@ a {
   }
   .productCartMargin {
     margin-bottom: 64px;
+  }
+  .cartContent {
+    gap: 58px;
+    margin-top: 39px;
+    margin-bottom: 96px;
+  }
+  .cartContent .cartProductBox {
+    gap: 32px;
+  }
+  .cartContent .cartProductBox_product {
+    min-width: 358px;
+  }
+  .cartContent .cartProductBox_product_img {
+    max-width: 144px;
+  }
+  .cartContent .cartProductBox_product_textBox {
+    padding-top: 13px;
+    padding-bottom: 25px;
+  }
+  .cartContent .cartProductBox_product_textBox_nameProduct {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    margin-bottom: 25px;
+  }
+  .cartContent .cartProductBox_product_textBox_text {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .cartContent .cartProductBox_product_buttonClose_svg {
+    width: 10px;
+    height: 11px;
+  }
+  .cartContent .cartProductBox_buttonBox {
+    margin-top: 0px;
+  }
+  .cartContent .cartProductBox_buttonBox_button {
+    padding: 9px 18px 10px 18px;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .cartContent .payBox {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

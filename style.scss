@@ -1352,6 +1352,19 @@ a {
         display: none;
     }
 
+    // cart
+    .cartContent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cartContent .payBox {
+        display: flex;
+        max-width: 735px;
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+        gap: 15px;
+    }
+
 }
 
 @media (max-width: 741px) {
@@ -1476,5 +1489,71 @@ a {
 
     .productCartMargin {
         margin-bottom: 64px;
+    }
+
+    // cart
+
+    .cartContent {
+        gap: 58px;
+        margin-top: 39px;
+        margin-bottom: 96px;
+    }
+
+    .cartContent .cartProductBox {
+        gap: 32px;
+        &_product {
+            min-width: 358px;
+
+            &_img {
+                max-width: 144px;
+            }
+
+            &_textBox {
+                padding-top: 13px;
+                padding-bottom: 25px;
+                &_nameProduct {
+                    font-family: $fontFamily;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.2px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    margin-bottom: 25px;
+                }
+                &_text {
+                    font-family: $fontFamily;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16.8px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                }
+            }
+            &_buttonClose {
+                &_svg {
+                    width: 10px;
+                    height: 11px;
+                }
+            }
+        }
+        &_buttonBox {
+            margin-top: 0px;
+            &_button {
+                padding: 9px 18px 10px 18px;
+                font-family: $fontFamily;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.4px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+        }
+    }
+
+    .cartContent .payBox {
+        flex-direction: column;
     }
 }
