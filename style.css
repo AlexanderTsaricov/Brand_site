@@ -1387,4 +1387,8 @@ a {
     -webkit-text-decoration-skip-ink: none;
             text-decoration-skip-ink: none;
   }
+  .bigFooter_lastFooter {
+    flex-direction: column;
+    gap: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
