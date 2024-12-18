@@ -571,6 +571,7 @@ a {
         padding: 13px 16px;
         left: calc(50% - 586px);
         &[open] {
+            top: 39px;
             .filterBox_filter_text {
                 color: $purpleSite;
             }
@@ -1213,11 +1214,37 @@ a {
             left: 397px;
         }
     }
+    
+
+    .productDiscription {
+        width: 100vw;
+        position: relative;
+        top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .productCartMargin {
+        margin-top: 128px;
+    }
 
     .filterBox {
         &_filter{
             left: calc(50% - 486px);
         }
+    }
+
+    .cartContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartContent .payBox {
+        display: flex;
+        max-width: 735px;
+        padding-left: calc(50% - 470px);
+        padding-right: calc(50% - 470px);
+        gap: 15px;
     }
 }
 
@@ -1311,18 +1338,12 @@ a {
     // product
 
     .bigImageBox {
-        position: static;
-        height: 624px;
-        width: 100%;
-        &_image {
-        width: 100%;
-        }
-
+        position: relative;
     }
 
     .productDiscription {
-        position: static;
-        width: 100%;
+        position: relative;
+        width: 100vw;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 64px;
@@ -1492,14 +1513,16 @@ a {
         justify-content: flex-end;
         &_filter{
             left: calc(50% - 189px);
-            width: 37.5px;
-            height: 25px;
             &_text {
                 display: none;
             }
             &_svg {
                 width: 37.5px;
                 height: 25px;
+            }
+            &[open] {
+                top: 19px;
+                
             }
         }
         &_grayBox {
@@ -1529,6 +1552,12 @@ a {
 
     .productCartMargin {
         margin-bottom: 64px;
+    }
+
+    .bigImageBox {
+        &_image {
+            width: calc(100% - 94px);
+        }
     }
 
     // cart

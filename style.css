@@ -560,6 +560,7 @@ a {
   left: calc(50% - 586px);
 }
 .filterBox_filter[open] {
+  top: 39px;
   color: #f16d7f;
   background-color: white;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
@@ -1201,8 +1202,29 @@ a {
     top: 53px;
     left: 397px;
   }
+  .productDiscription {
+    width: 100vw;
+    position: relative;
+    top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .productCartMargin {
+    margin-top: 128px;
+  }
   .filterBox_filter {
     left: calc(50% - 486px);
+  }
+  .cartContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cartContent .payBox {
+    display: flex;
+    max-width: 735px;
+    padding-left: calc(50% - 470px);
+    padding-right: calc(50% - 470px);
+    gap: 15px;
   }
 }
 @media (max-width: 951px) {
@@ -1285,16 +1307,11 @@ a {
     left: calc(50% - 386px);
   }
   .bigImageBox {
-    position: static;
-    height: 624px;
-    width: 100%;
-  }
-  .bigImageBox_image {
-    width: 100%;
+    position: relative;
   }
   .productDiscription {
-    position: static;
-    width: 100%;
+    position: relative;
+    width: 100vw;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 64px;
@@ -1445,8 +1462,6 @@ a {
   }
   .filterBox_filter {
     left: calc(50% - 189px);
-    width: 37.5px;
-    height: 25px;
   }
   .filterBox_filter_text {
     display: none;
@@ -1454,6 +1469,9 @@ a {
   .filterBox_filter_svg {
     width: 37.5px;
     height: 25px;
+  }
+  .filterBox_filter[open] {
+    top: 19px;
   }
   .filterBox_grayBox {
     gap: 24px;
@@ -1474,6 +1492,9 @@ a {
   }
   .productCartMargin {
     margin-bottom: 64px;
+  }
+  .bigImageBox_image {
+    width: calc(100% - 94px);
   }
   .cartContent {
     gap: 58px;
