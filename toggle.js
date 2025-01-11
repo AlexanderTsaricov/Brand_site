@@ -1,13 +1,12 @@
-
-document.querySelector('#menuButton').addEventListener('click', function() {
-    let menu = document.getElementById('menu');
+document.querySelector("#menuButton").addEventListener("click", function () {
+    let menu = document.getElementById("menu");
 
     if (menu.classList.contains("toggleMenu_of")) {
         menu.classList.remove("toggleMenu_of");
     } else {
         menu.classList.add("toggleMenu_of");
     }
-})
+});
 
 class product {
     constructor(imgLink) {
@@ -17,7 +16,7 @@ class product {
     productDiscription = `
         Known for her sculptural takes on traditional tailoring, 
         Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`;
-    productPrice = "$52.00"
+    productPrice = "$52.00";
 }
 
 let productArr = [];
@@ -31,7 +30,7 @@ let imgList = [
     "catalogCart/manInBlueCap.png",
     "catalogCart/manInWhiteShirt.png",
     "catalogCart/manInBlackJacet.png",
-    "catalogCart/manInGreenT-Shirt.png"
+    "catalogCart/manInGreenT-Shirt.png",
 ];
 let minProduct = 9;
 let remainderCart = productArr.length - 9;
@@ -41,7 +40,7 @@ function addProduct(imgLink) {
 }
 
 for (let index = 0; index < imgList.length; index++) {
-    addProduct(imgList[index]);    
+    addProduct(imgList[index]);
 }
 
 function addProductTeg(product) {
@@ -70,7 +69,7 @@ function addProductTeg(product) {
                                 </svg>
                             Add To Cart  
     `;
-    
+
     divHover.appendChild(teg_a);
     divCart.appendChild(divHover);
 
@@ -100,86 +99,89 @@ function addNumbersTag(count, select) {
     for (let index = 0; index < count; index++) {
         let numbersBox = document.getElementById("numbersBox");
         let tag_a = document.createElement("a");
-        tag_a.textContent = `${index+1}`;
+        tag_a.textContent = `${index + 1}`;
         if (isClickHandled) {
-            tag_a.addEventListener('click', () => clickNumberCatalogList(index + 1));
+            tag_a.addEventListener("click", () =>
+                clickNumberCatalogList(index + 1)
+            );
         }
-        if ((index + 1) == select) {
+        if (index + 1 == select) {
             tag_a.className = "productCartBox_catalogListButtons_purpleNumber";
         } else {
             tag_a.className = "productCartBox_catalogListButtons_numbers";
         }
-        tag_a.classList.add("catalogListNumber")
+        tag_a.classList.add("catalogListNumber");
         numbersBox.appendChild(tag_a);
     }
 }
 
 let cartBox = document.getElementById("cartBox");
-
-for (let index = 0; index < productArr.length; index++) {
-    cartBox.appendChild(addProductTeg(productArr[index]));    
-}
-addNumbersTag(productArr.length-8, 1);
-
-function removeTags(tag) {
-    const elements = document.querySelectorAll(`.${tag}`);
-    elements.forEach((element) => {
-        element.remove();
-    });
-}
-
-let mediaMaxWidth951 = window.matchMedia("(max-width: 951px)");
-let mediaMinWidth1145 = window.matchMedia("(min-width: 952px)");
-let productOnPage = 9;
-function maxWidth951(media) {
-    if (media.matches) {
-        removeTags("catalogCarts");
-        productOnPage = 0;
-        minProduct = 8;     
-        let maxProducts = Math.min(minProduct, productArr.length);
-        for (let index = 0; index < maxProducts; index++) {
-            cartBox.appendChild(addProductTeg(productArr[index]));
-            productOnPage++;
-        }
-        removeTags("catalogListNumber");
-        remainderCart = productArr.length - 7;
-        addNumbersTag(remainderCart, 1);
-    }
-}
-
-function add9cart(media) {
-    if (media.matches) {
-        removeTags("catalogCarts");
-        productOnPage = 0;
-        minProduct = 9;              
-        let maxProducts = Math.min(minProduct, productArr.length);
-        for (let index = 0; index < maxProducts; index++) {
-            cartBox.appendChild(addProductTeg(productArr[index]));
-            productOnPage++;
-        }
-        removeTags("catalogListNumber");
-        remainderCart = productArr.length - 8;
-        addNumbersTag(remainderCart, 1);
-    }
-}
-
-function clickNumberCatalogList(number) {
-    console.log(`click ${number}`);
-    if (number == 1) {
-        productOnPage = 1;
-    }
-    removeTags("catalogCarts");
-    let maxProducts = Math.min(minProduct, productArr.length);
-    for (let index = productOnPage - 1; index < maxProducts; index++) {
+if (document.title != "Brand") {
+    for (let index = 0; index < productArr.length; index++) {
         cartBox.appendChild(addProductTeg(productArr[index]));
-        productOnPage++;
     }
-    removeTags("catalogListNumber");
-    remainderCart = productArr.length - (minProduct-1);
-    addNumbersTag(remainderCart, number);
-}
+    addNumbersTag(productArr.length - 8, 1);
 
-mediaMaxWidth951.addEventListener("change", maxWidth951);
-mediaMinWidth1145.addEventListener("change", add9cart);
-maxWidth951(mediaMaxWidth951);
-add9cart(mediaMinWidth1145);
+    function removeTags(tag) {
+        const elements = document.querySelectorAll(`.${tag}`);
+        elements.forEach((element) => {
+            element.remove();
+        });
+    }
+
+    let mediaMaxWidth951 = window.matchMedia("(max-width: 951px)");
+    let mediaMinWidth1145 = window.matchMedia("(min-width: 952px)");
+    let productOnPage = 9;
+    function maxWidth951(media) {
+        if (media.matches) {
+            removeTags("catalogCarts");
+            productOnPage = 0;
+            minProduct = 8;
+            let maxProducts = Math.min(minProduct, productArr.length);
+            for (let index = 0; index < maxProducts; index++) {
+                cartBox.appendChild(addProductTeg(productArr[index]));
+                productOnPage++;
+            }
+            removeTags("catalogListNumber");
+            remainderCart = productArr.length - 7;
+            addNumbersTag(remainderCart, 1);
+        }
+    }
+
+    function add9cart(media) {
+        if (media.matches) {
+            removeTags("catalogCarts");
+            productOnPage = 0;
+            minProduct = 9;
+            let maxProducts = Math.min(minProduct, productArr.length);
+            for (let index = 0; index < maxProducts; index++) {
+                cartBox.appendChild(addProductTeg(productArr[index]));
+                productOnPage++;
+            }
+            removeTags("catalogListNumber");
+            remainderCart = productArr.length - 8;
+            addNumbersTag(remainderCart, 1);
+        }
+    }
+
+    function clickNumberCatalogList(number) {
+        console.log(`click ${number}`);
+        if (number == 1) {
+            productOnPage = 1;
+        }
+        removeTags("catalogCarts");
+        let maxProducts = Math.min(minProduct, productArr.length);
+        for (let index = productOnPage - 1; index < maxProducts; index++) {
+            cartBox.appendChild(addProductTeg(productArr[index]));
+            productOnPage++;
+        }
+        removeTags("catalogListNumber");
+        remainderCart = productArr.length - (minProduct - 1);
+        addNumbersTag(remainderCart, number);
+    }
+
+    mediaMaxWidth951.addEventListener("change", maxWidth951);
+    mediaMinWidth1145.addEventListener("change", add9cart);
+    maxWidth951(mediaMaxWidth951);
+    add9cart(mediaMinWidth1145);
+}
