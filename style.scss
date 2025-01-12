@@ -50,6 +50,9 @@ a {
         justify-content: space-between;
         padding-top: 18px;
         padding-bottom: 18px;
+        &_basketButton {
+            position: relative;
+        }
     }
 }
 .toggleMenu {
@@ -901,6 +904,7 @@ a {
             display: flex;
             justify-content: space-between;
             margin-top: 32px;
+            min-width: 652px;
             &_button {
                 padding: 18px 40px 15px 40px;
                 font-family: $fontFamily;
@@ -1188,6 +1192,27 @@ a {
     }
 }
 
+.menuCartCount {
+    &_svg {
+        position: absolute;
+        top: -5px;
+        left: 21px;
+    }
+    &_count {
+        position: absolute;
+        font-family: $fontFamily;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: white;
+        top: -2px;
+        right: -2px;
+    }
+}
+
 @media (max-width: 1145px) {
     .contentCenter {
         padding-left: calc(50% - 470px);
@@ -1245,6 +1270,16 @@ a {
         padding-left: calc(50% - 470px);
         padding-right: calc(50% - 470px);
         gap: 15px;
+    }
+        .productCartBox .productCartBox_cartBox .productCartBox_cartBox_cart .productCartBox_cartBox_cart_hover {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #3A3838;
+        width: 293px;
+        height: 342px;
+        opacity: 86%;
     }
 }
 
@@ -1424,6 +1459,16 @@ a {
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
         }
+    }
+    .productCartBox .productCartBox_cartBox .productCartBox_cartBox_cart .productCartBox_cartBox_cart_hover {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #3A3838;
+        width: 100%;
+        height: 74%;
+        opacity: 86%;
     }
 
 }
@@ -1609,6 +1654,7 @@ a {
         }
         &_buttonBox {
             margin-top: 0px;
+            min-width: 358px;
             &_button {
                 padding: 9px 18px 10px 18px;
                 font-family: $fontFamily;
